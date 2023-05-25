@@ -41,3 +41,15 @@
         resource_tags:
           Name: shekhar-pubsub2
       register: pubsub2_out
+
+    - name: create public subnet3 in zone3
+      ec2_vpc_subnet:
+        vpc_id: "{{vpcout.vpc.id}}"
+        region: "{{region}}"
+        az: "{{zone3}}"
+        state: "{{state}}"
+        cidr: "{{PubSub3Cidr}}"
+        map_public: yes
+        resource_tags:
+          Name: shekhar-pubsub3
+      register: pubsub3_out
