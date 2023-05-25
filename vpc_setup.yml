@@ -118,8 +118,6 @@
         wait: yes
         region: "{{region}}"
         if_exist_do_not_create: true
-        tags:
-          Name: shekhar_NATGW
       register: NATGW_out
 
     - name: setup private subnet route table
