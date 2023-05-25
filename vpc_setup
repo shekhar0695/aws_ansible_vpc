@@ -1,0 +1,22 @@
+vpc_name: "shekhar_vpc"
+
+#vpc range
+vpcCidr: '172.20.0.0/16'
+
+#subnet range
+PubSub1Cidr: '172.20.1.0/24'
+PubSub2Cidr: '172.20.2.0/24'
+PubSub3Cidr: '172.20.3.0/24'
+PriSub1Cidr: '172.20.4.0/24'
+PriSub2Cidr: '172.20.5.0/24'
+PriSub3Cidr: '172.20.6.0/24'
+
+# region vpc_name
+region: "ap-south-1"
+
+# zone names
+zone1: ap-south-1a
+zone2: ap-south-1b
+zone3: ap-south-1c
+
+state: present
